@@ -1,0 +1,474 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 500vh;
+    background-color: black;
+}
+
+.background {
+    height: 100vh;
+    /* min-height: 100vh; */
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.63)),
+        url("Background/Netflix Bckground.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.netflix img {
+    width: 177px;
+    height: auto;
+    margin-top: 0.4rem;
+}
+
+.signin button {
+
+    display: inline-block;
+    margin-top: 0.4rem;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.signin button:hover {
+    background-color: rgba(255, 0, 0, 0.651);
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 20px;
+}
+
+.navtext {
+    font-family: "Cossette Texte", sans-serif;
+    font-weight: 1000;
+    font-style: normal;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.starts {
+    font-family: "Cossette Texte", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+
+    margin-top: 1rem;
+}
+
+.email input {
+    padding: 1rem;
+    padding-right: 10rem;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-size: 1rem;
+}
+
+.email input::placeholder {
+    font-size: 1rem;
+    font-family: "Cossette Texte", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.705);
+}
+
+.ready {
+    font-size: 1rem;
+    font-family: "Cossette Texte", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 2rem;
+}
+
+.getstarted button {
+    font-family: "Cossette Texte", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    padding: 1rem;
+    margin: auto;
+    width: 90px;
+    font-size: 1rem;
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.getstarted button:hover {
+    background-color: rgba(255, 0, 0, 0.651);
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+}
+
+.trending {
+    color: white;
+    position: relative;
+    top: 3rem;
+    margin-left: 7rem;
+    font-family: "Cossette Texte", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+.movies {
+    position: relative;
+    top: 5rem;
+    /* margin-left: 3rem; */
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    padding: 0 2rem;
+    flex-wrap: wrap;
+}
+
+.movies img {
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.movies img:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+.number {
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+    color: black;
+    font-size: clamp(100px, 8vw, 180px);
+    display: flex;
+    gap: 4rem;
+    margin-top: -6rem;
+    position: relative;
+    z-index: 2;
+    color: transparent;
+    -webkit-text-stroke: 3px white;
+}
+
+.more {
+    font-family: "Cossette Texte", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    font-style: normal;
+    color: white;
+    position: relative;
+    top: 8rem;
+    margin-left: 5rem;
+}
+
+.moreboxes {
+    position: relative;
+    top: 10rem;
+    /* margin-left: 5rem; */
+    /* width: 19vw;
+    height: 50vh; */
+    /* border: 1px solid white;
+    background-color: #54457F; */
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.moreheading1 {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    font-family: "Cossette Texte", sans-serif;
+    font-weight: 1000;
+    font-style: normal;
+    text-align: center;
+}
+
+.moreparagraph {
+    padding: 2rem;
+    font-size: 1.3rem;
+}
+
+.box1 {
+    /* width: 19vw; */
+    width: 250px;
+    /* min-height: 400px; */
+    height: 400px;
+    border: 1px solid white;
+    background: linear-gradient(135deg,
+            #1e1b3a,
+            #2a1f4f,
+            #3b1d4a,
+            #1a1a2e);
+}
+
+.frequently {
+    font-family: "Cossette Texte", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    font-style: normal;
+    color: white;
+    position: relative;
+    top: 15rem;
+    margin-left: 5rem;
+}
+
+.netflix1 {
+    font-family: "Cossette Texte", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    color: white;
+    position: relative;
+    top: 20rem;
+    /* margin-left: 7rem; */
+    width: 73vw;
+    background-color: #494949;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.plus {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.netflix1:hover {
+    background-color: #696969;
+}
+
+.frequentlydown {
+    display: grid;
+    justify-content: center;
+}
+
+.email1 input {
+    padding: 1rem;
+    padding-right: 10rem;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-size: 1rem;
+}
+
+.email1 input::placeholder {
+    font-size: 1rem;
+    font-family: "Cossette Texte", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.705);
+}
+
+.getstarted1 button {
+    font-family: "Cossette Texte", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    padding: 1rem;
+    margin: auto;
+    width: 90px;
+    font-size: 1rem;
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.getstarted1 button:hover {
+    background-color: rgba(255, 0, 0, 0.651);
+}
+
+.submit1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+}
+
+.submit1 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 26rem;
+
+}
+
+.ready1 {
+    position: relative;
+    top: 25rem;
+    display: inline;
+    /* background-color: yellow; */
+    font-size: 1rem;
+    font-family: "Cossette Texte", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.question{
+    position: relative;
+    top: 32rem;
+    font-size: 1.1rem;
+}
+.question a{
+    color: #C4C4C4;
+}
+.last1 a {
+    color: #C4C4C4; /* normal */
+}
+
+.last1 a:visited {
+    color: C4C4C4; /* after visiting */
+}
+
+.last1 a:active {
+    color: red; /* when clicking */
+}
+.last{
+    position: relative;
+    top: 35rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+}
+.languagebox{
+    position: relative;
+    top: 40rem;
+}
+.languagebox select{
+    width: 135px;
+    padding: 0.5rem 0;
+    background-color: #242424;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+}
+.languagebox option{
+    text-align: center;
+}
+.pakistan{
+    color: white;
+    position: relative;
+    top: 43rem;
+    margin-left: 0.5rem;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    font-weight: 400;
+}
+.pakistan p{
+    position: relative;
+    top: 3rem;
+}
+@media (max-width:716px){
+    .navtext{
+        font-size: 2rem;
+    }
+}
+@media (max-width:574px){
+    .email input{
+        padding-right: 3rem;
+    }
+    .ready{
+        font-size: 0.9rem;
+        text-align: center;
+    }
+    .ready1{
+        text-align: center;
+    }
+    .question{
+        text-align: center;
+    }
+    .last{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .languagebox{
+        text-align: center;
+    }
+    .pakistan{
+        text-align: center;
+    }
+    .frequentlydown{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width:604px){
+    .email1 input{
+        padding-right: 5rem;
+    }
+}
+@media (max-width:404px){
+    .navtext{
+        font-size: 20px;
+    }
+}
+@media (max-width:396px){
+    .email input{
+        padding-right: 1rem;
+    }
+    .ready{
+        font-size: 0.8rem;
+    }
+    .email1 input{
+        padding-right: 1rem;
+    }
+    .ready1{
+        font-size: 0.8rem;
+    }
+}
+@media (max-width:328px){
+    .email input{
+        padding-right: 0.2rem;
+    }
+    .ready{
+        font-size: 0.5rem;
+    }
+    .email1 input{
+        padding-right: 0.2rem;
+    }
+    .ready1{
+        font-size: 0.7rem;
+    }
+}
